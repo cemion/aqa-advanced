@@ -3,9 +3,9 @@ const name1 = 'Anna';
 const name2 = 'Ivan';
 
 // Concatenation
-const concatGreeting = greeting + ' ' + name1 + '! ' + greeting + ' ' + name2 + '!';
-console.log(concatGreeting);
+console.log(greeting + ' ' + name1 + '!');
+console.log(greeting + ' ' + name2 + '!');
 
 // Template string
-const templateGreeting = `${greeting} ${name1}! ${greeting} ${name2}!`;
-console.log(templateGreeting);
+console.log(`${greeting} ${name1}!`);
+console.log(`${greeting} ${name2}!`);

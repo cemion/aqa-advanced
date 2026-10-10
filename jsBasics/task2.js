@@ -1,8 +1,11 @@
+const greeting = 'Hello';
 const name1 = 'Anna';
 const name2 = 'Ivan';
 
-const concatGreeting = 'Hello, ' + name1 + ' and ' + name2 + '!';
+// Concatenation
+const concatGreeting = greeting + ' ' + name1 + '! ' + greeting + ' ' + name2 + '!';
 console.log(concatGreeting);
 
-const templateGreeting = `Hello, ${name1} and ${name2}!`;
+// Template string
+const templateGreeting = `${greeting} ${name1}! ${greeting} ${name2}!`;
 console.log(templateGreeting);

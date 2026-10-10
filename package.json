@@ -1,0 +1,25 @@
+{
+  "name": "aqa-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodeBasics/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node nodeBasics/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cemion/aqa-advanced.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/cemion/aqa-advanced/issues"
+  },
+  "homepage": "https://github.com/cemion/aqa-advanced#readme",
+  "dependencies": {
+    "chalk": "^6.0.1"
+  }
+}

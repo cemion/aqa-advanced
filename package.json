@@ -1,0 +1,25 @@
+{
+  "name": "aqa-advanced",
+  "version": "1.0.0",
+  "description": "AQA Advanced homework",
+  "type": "commonjs",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cemion/aqa-advanced.git"
+  },
+  "license": "ISC",
+  "lint-staged": {
+    "*.{js,cjs,mjs}": [
+      "eslint --fix --max-warnings=0",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": "prettier --write"
+  }
+}

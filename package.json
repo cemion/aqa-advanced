@@ -1,0 +1,46 @@
+{
+  "name": "aqa-advanced",
+  "version": "1.0.0",
+  "description": "AQA Advanced homework",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cemion/aqa-advanced.git"
+  },
+  "license": "ISC",
+  "lint-staged": {
+    "*.{js,cjs,mjs}": [
+      "eslint --fix --max-warnings=0",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": "prettier --write"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "axios": "^1.21.1",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "globals": "^17.14.0",
+    "husky": "^9.1.7",
+    "jest": "^30.5.2",
+    "lint-staged": "^17.6.1",
+    "prettier": "^3.10.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 15000,
+    "verbose": true,
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ]
+  }
+}
